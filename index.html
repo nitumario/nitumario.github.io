@@ -1,1 +1,41 @@
-meow
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal Drive Connector is a private Google Drive OAuth configuration used with rclone on a personal computer.">
+  <title>Personal Drive Connector — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><div class="wrap">
+    <a class="brand" href="index.html">Personal Drive Connector</a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div></header>
+  <main class="wrap">
+    <p class="eyebrow">Personal Google Drive integration</p>
+    <h1>Google Drive access for a personal computer.</h1>
+    <p class="lead">Personal Drive Connector is a private Google OAuth application configuration used to authorize <a href="https://rclone.org/">rclone</a>, an open-source command-line file management tool, to access a Google Drive account at the account owner's request.</p>
+    <div class="note"><strong>Personal use only.</strong> This website is informational. It does not provide a hosted file storage service, handle Google sign-ins, or receive files from your Google Drive. The actual connection runs locally through rclone on the user's device.</div>
+    <div class="grid">
+      <section><h2>Browse and transfer</h2><p>Use rclone to list folders, download, upload, copy, or move files between a personal computer and Google Drive.</p></section>
+      <section><h2>Mount and synchronize</h2><p>Mount Google Drive as a local folder, or manually synchronize selected files and folders with rclone.</p></section>
+      <section><h2>User-controlled access</h2><p>Authorization is granted through Google's OAuth consent flow. The user can revoke access through Google Account security settings.</p></section>
+      <section><h2>Local operation</h2><p>File transfers and OAuth credentials are managed by rclone on the user's own system, not by this website.</p></section>
+    </div>
+    <div class="panel">
+      <h2>What access may be requested?</h2>
+      <p>Depending on the rclone configuration, Google Drive permissions may include viewing file names, metadata and contents, as well as creating, updating and deleting Drive files. Full read/write access is needed for some mount and synchronization workflows. The specific permissions are shown on Google's consent screen before authorization.</p>
+      <h2>How is your data handled?</h2>
+      <p>Rclone contacts Google Drive directly to carry out the file operations initiated by the user. Files, cache data, logs and authorization tokens may be stored locally on the user's device. This website does not receive or store Google Drive files or OAuth tokens.</p>
+      <p>Read the <a href="privacy.html">Privacy Policy</a> for details about access, storage, sharing, retention and deletion, or the <a href="terms.html">Terms of Service</a> for usage conditions.</p>
+    </div>
+    <p class="small" style="margin-top:24px;">This is an independent personal configuration, not an official Google or rclone product. Google Drive is a trademark of Google LLC.</p>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Personal Drive Connector</span><span><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></span></div></footer>
+</body>
+</html>
